@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Restaurant.destroy_all
+(1..5).each do |variable|
+  restaurant = Restaurant.new(name: "hjcks", address: "adress", category: "french",phone_number: "06 24 11 53 12")
+  restaurant.save
+end
